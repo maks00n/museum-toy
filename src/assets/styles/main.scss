@@ -29,6 +29,10 @@ span {
   margin: 0;
 }
 
+img {
+  object-fit: cover;
+}
+
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter.ttf');

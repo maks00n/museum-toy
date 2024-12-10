@@ -8,9 +8,9 @@ defineProps<{
 
 <template>
   <div class="masters-card">
-    <img src="../assets/images/master.png" :alt="name" class="masters-card__image" />
-    <span class="masters-card__surname">{{ surname }}</span>
-    <span class="masters-card__name">{{ name }}</span>
+    <img src="@/assets/images/master.png" :alt="name" />
+    <span class="surname">{{ surname }}</span>
+    <span class="name">{{ name }}</span>
   </div>
 </template>
 
@@ -21,14 +21,13 @@ defineProps<{
   flex-direction: column;
   align-items: center;
 
-  &__image {
+  img {
     width: 387.68rem;
     height: 575.68rem;
-    object-fit: cover;
     border-radius: 24rem;
   }
 
-  &__surname {
+  .surname {
     font-size: 40rem;
     line-height: 48rem;
     font-family: 'Condensed';
@@ -37,7 +36,7 @@ defineProps<{
     text-transform: uppercase;
   }
 
-  &__name {
+  .name {
     font-size: 16rem;
     margin-top: 9rem;
     text-transform: uppercase;

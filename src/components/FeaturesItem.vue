@@ -9,26 +9,10 @@
       </pre>
     </div>
     <div class="images">
-      <img
-        src="../assets/images/feature.png"
-        alt="features-img-1"
-        class="features-img features-img-1"
-      />
-      <img
-        src="../assets/images/feature.png"
-        alt="features-img-2"
-        class="features-img features-img-2"
-      />
-      <img
-        src="../assets/images/feature.png"
-        alt="features-img-3"
-        class="features-img features-img-3"
-      />
-      <img
-        src="../assets/images/feature.png"
-        alt="features-img-4"
-        class="features-img features-img-4"
-      />
+      <img src="@/assets/images/feature-1.webp" alt="features-img-1" class="img-1" />
+      <img src="@/assets/images/feature-2.webp" alt="features-img-2" class="img-2" />
+      <img src="@/assets/images/feature-3.webp" alt="features-img-3" class="img-3" />
+      <img src="@/assets/images/feature-4.webp" alt="features-img-4" class="img-4" />
     </div>
   </div>
 </template>
@@ -69,34 +53,33 @@
     width: 100%;
     height: 618.51rem;
 
-    .features-img {
+    img {
       border-radius: 24rem;
-      object-fit: cover;
       position: absolute;
     }
 
-    .features-img-1 {
+    .img-1 {
       width: 498.7rem;
       height: 618.51rem;
       top: 70rem;
       left: -250rem;
       transform: rotate(-15deg);
     }
-    .features-img-2 {
+    .img-2 {
       width: 509.71rem;
       height: 338.44rem;
       top: 150rem;
       left: 358rem;
       transform: rotate(3.96deg);
     }
-    .features-img-3 {
+    .img-3 {
       width: 440.2rem;
       height: 399.73rem;
       top: 170rem;
       left: 936.9rem;
       transform: rotate(-4.94deg);
     }
-    .features-img-4 {
+    .img-4 {
       width: 498.7rem;
       height: 618.51rem;
       top: -15rem;

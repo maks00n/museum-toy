@@ -40,10 +40,10 @@ const figures = [
       </swiper-slide>
     </Swiper>
     <div class="swiper-button-prev-custom">
-      <img src="../assets/images/arrow-left.svg" alt="prev" />
+      <img src="@/assets/images/arrow-left.svg" alt="prev" />
     </div>
     <div class="swiper-button-next-custom">
-      <img src="../assets/images/arrow-right.svg" alt="next" />
+      <img src="@/assets/images/arrow-right.svg" alt="next" />
     </div>
   </div>
 </template>

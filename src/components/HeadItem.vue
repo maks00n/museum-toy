@@ -1,6 +1,6 @@
 <template>
   <div class="head-item">
-    <img src="../assets/images/logo.png" alt="head-item" class="logo" />
+    <img src="@/assets/images/logo.png" alt="head-item" class="logo" />
     <h1>ДИВЕЕВСКАЯ ИГРУШКА</h1>
     <p>
       Уникальное самобытное явление культуры, зарождающийся народный промысел.
@@ -8,7 +8,7 @@
       Эта игрушка является настоящим символом русского народного творчества и имеет <br />
       богатую историю, насчитывающую сотни лет.
     </p>
-    <img src="../assets/images/head-img.png" alt="head-item" class="head-img" />
+    <img src="@/assets/images/head-img.png" alt="head-item" class="head-img" />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules'
 import MastersCard from './MastersCard.vue'
 
 import 'swiper/css'
@@ -19,13 +19,17 @@ const masters = [
 
 <template>
   <div class="masters-slider">
-    <h2 class="masters-slider__title">НАШИ МАСТЕРА</h2>
+    <h2 class="title">НАШИ МАСТЕРА</h2>
     <Swiper
-      :modules="[Navigation, Pagination]"
+      :modules="[Navigation, Autoplay]"
+      :autoplay="{
+        delay: 3000,
+        disableOnInteraction: false,
+      }"
       :slides-per-view="4"
       :space-between="20"
       :loop="true"
-      class="masters-slider__swiper"
+      class="swiper"
     >
       <swiper-slide v-for="master in masters" :key="master.id">
         <MastersCard :surname="master.surname" :name="master.name" :image="master.image" />
@@ -40,30 +44,11 @@ const masters = [
   margin: 300rem auto 0;
   position: relative;
 
-  &__title {
+  .title {
     font-family: 'Arial';
     font-size: 140rem;
     font-weight: 600;
     color: #8050162e;
-    position: absolute;
-    top: -30rem;
-    left: 0;
-  }
-
-  &__swiper {
-    ::v-deep .swiper-button-next,
-    ::v-deep .swiper-button-prev {
-      color: $primary-color;
-    }
-
-    ::v-deep .swiper-pagination-bullet {
-      background: $primary-color;
-      opacity: 0.5;
-
-      &-active {
-        opacity: 1;
-      }
-    }
   }
 }
 </style>

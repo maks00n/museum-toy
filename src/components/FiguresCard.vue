@@ -27,7 +27,7 @@ defineProps<{
   img {
     width: 429.48rem;
     height: 716.87rem;
-    object-fit: cover;
+    border-radius: 24rem;
   }
 
   .text {
