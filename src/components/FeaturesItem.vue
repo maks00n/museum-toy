@@ -50,8 +50,10 @@
 
   .images {
     position: relative;
-    width: 100%;
-    height: 618.51rem;
+    height: 760rem;
+    max-width: 100vw;
+    overflow: hidden;
+    margin-top: -50rem;
 
     img {
       border-radius: 24rem;
@@ -61,28 +63,28 @@
     .img-1 {
       width: 498.7rem;
       height: 618.51rem;
-      top: 70rem;
+      top: 120rem;
       left: -250rem;
       transform: rotate(-15deg);
     }
     .img-2 {
       width: 509.71rem;
       height: 338.44rem;
-      top: 150rem;
+      top: 200rem;
       left: 358rem;
       transform: rotate(3.96deg);
     }
     .img-3 {
       width: 440.2rem;
       height: 399.73rem;
-      top: 170rem;
+      top: 220rem;
       left: 936.9rem;
       transform: rotate(-4.94deg);
     }
     .img-4 {
       width: 498.7rem;
       height: 618.51rem;
-      top: -15rem;
+      top: 35rem;
       left: 1500rem;
       transform: rotate(9.32deg);
     }

@@ -22,8 +22,8 @@ defineProps<{
   align-items: center;
 
   img {
-    width: 387.68rem;
-    height: 575.68rem;
+    width: 100%;
+    height: 469rem;
     border-radius: 24rem;
   }
 

@@ -14,6 +14,7 @@ const masters = [
   { id: 3, name: 'Елена', surname: 'Егорова', image: '/masters/elena.jpg' },
   { id: 4, name: 'Ольга', surname: 'Ольгина', image: '/masters/olga.jpg' },
   { id: 5, name: 'Наталья', surname: 'Натальева', image: '/masters/natalia.jpg' },
+  { id: 6, name: 'Наталья', surname: 'Натальева', image: '/masters/natalia.jpg' },
 ]
 </script>
 
@@ -26,7 +27,7 @@ const masters = [
         delay: 3000,
         disableOnInteraction: false,
       }"
-      :slides-per-view="4"
+      :slides-per-view="5"
       :space-between="20"
       :loop="true"
       class="swiper"
@@ -40,7 +41,7 @@ const masters = [
 
 <style lang="scss" scoped>
 .masters-slider {
-  width: 1784.73rem;
+  width: 1699.2rem;
   margin: 300rem auto 0;
   position: relative;
 
@@ -49,6 +50,7 @@ const masters = [
     font-size: 140rem;
     font-weight: 600;
     color: #8050162e;
+    margin-left: -100rem;
   }
 }
 </style>

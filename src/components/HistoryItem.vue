@@ -72,10 +72,10 @@
   }
   .toy-2 {
     position: absolute;
-    bottom: -250rem;
+    bottom: -280rem;
     right: -110rem;
     width: 500.19rem;
-    height: 374.66rem;
+    height: 420.66rem;
   }
 }
 </style>

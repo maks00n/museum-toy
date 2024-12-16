@@ -51,7 +51,7 @@ const figures = [
 <style lang="scss" scoped>
 .figures-slider {
   width: 1738.48rem;
-  margin: 150rem auto 0;
+  margin: 100rem auto 0;
   position: relative;
 
   .swiper-button-prev-custom,
