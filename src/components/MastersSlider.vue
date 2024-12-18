@@ -6,16 +6,22 @@ import MastersCard from './MastersCard.vue'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { onMounted, ref } from 'vue'
+import { getMasters } from '@/api'
 
-// заглушка
-const masters = [
-  { id: 1, name: 'Анна', surname: 'Антонова', image: '/masters/anna.jpg' },
-  { id: 2, name: 'Мария', surname: 'Максимова', image: '/masters/maria.jpg' },
-  { id: 3, name: 'Елена', surname: 'Егорова', image: '/masters/elena.jpg' },
-  { id: 4, name: 'Ольга', surname: 'Ольгина', image: '/masters/olga.jpg' },
-  { id: 5, name: 'Наталья', surname: 'Натальева', image: '/masters/natalia.jpg' },
-  { id: 6, name: 'Наталья', surname: 'Натальева', image: '/masters/natalia.jpg' },
-]
+const masters = ref([
+  {
+    id: 0,
+    image: '',
+    firstName: '',
+    lastName: '',
+    patronymic: '',
+  },
+])
+
+onMounted(async () => {
+  masters.value = await getMasters()
+})
 </script>
 
 <template>
@@ -33,7 +39,12 @@ const masters = [
       class="swiper"
     >
       <swiper-slide v-for="master in masters" :key="master.id">
-        <MastersCard :surname="master.surname" :name="master.name" :image="master.image" />
+        <MastersCard
+          :surname="master.lastName"
+          :name="master.firstName"
+          :patronymic="master.patronymic"
+          :image="master.image"
+        />
       </swiper-slide>
     </Swiper>
   </div>

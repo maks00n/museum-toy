@@ -2,15 +2,16 @@
 defineProps<{
   surname: string
   name: string
+  patronymic: string
   image: string
 }>()
 </script>
 
 <template>
   <div class="masters-card">
-    <img src="@/assets/images/master.png" :alt="name" />
+    <img :src="image" :alt="name" />
     <span class="surname">{{ surname }}</span>
-    <span class="name">{{ name }}</span>
+    <span class="name">{{ name + ' ' + patronymic }}</span>
   </div>
 </template>
 

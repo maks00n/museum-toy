@@ -1,16 +1,16 @@
 <script setup lang="ts">
 defineProps<{
   image: string
-  name: string
+  title: string
   description: string
 }>()
 </script>
 
 <template>
   <div class="figures-card">
-    <img src="@/assets/images/figure.png" alt="figure" />
+    <img :src="image" alt="figure" />
     <div class="text">
-      <span class="name">{{ name }}</span>
+      <span class="name">{{ title }}</span>
       <span class="description">{{ description }}</span>
     </div>
   </div>

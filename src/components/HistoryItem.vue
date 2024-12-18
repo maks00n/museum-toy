@@ -1,18 +1,24 @@
+<script setup lang="ts">
+import { getHistory } from '@/api'
+import { onMounted, ref } from 'vue'
+
+const history = ref({
+  image: '',
+  description: '',
+})
+
+onMounted(async () => {
+  history.value = await getHistory()
+})
+</script>
+
 <template>
   <div class="history-item">
     <div class="img-wrapper">
-      <img src="@/assets/images/history.png" alt="history-item" />
+      <img :src="history.image" alt="history-item" />
     </div>
     <div class="text">
-      <pre>
-Создатель направления <b>Наталья Григорьевна Крушинская</b>  -  музыкант по образованию, приехала в Дивеево в 1991 г.
-
-Поселившись в с. Большое Череватово неподалеку от Дивеево, Наталья Григорьевна познакомилась с  Череватовским гончарным промыслом и узнала о существовании залежей Череватовской (Дивеевской)  глины.
-
-Тогда и начались первые опыты лепки. Наталья Григорьевна лепила сама и старалась увлечь лепкой местное население, в дальнейшем возник кружок лепки из глины.
-
-Постепенно мастерская расширялась, учеников становилось все больше, изделия приобретали самобытный стиль
-      </pre>
+      <pre>{{ history.description }}</pre>
     </div>
     <img src="@/assets/images/toy-1.svg" alt="toy-1" class="toy-1" />
     <img src="@/assets/images/toy-2.svg" alt="toy-2" class="toy-2" />
