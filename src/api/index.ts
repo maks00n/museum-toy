@@ -1,11 +1,11 @@
 import axios from 'axios'
 
-export const serverUrl = 'http://api.diveevskiy-museum.itlabs.top'
+const serverUrl = 'https://api.diveevskiy-museum.itlabs.top'
 
 const api = axios.create({
   baseURL: serverUrl + '/api/',
   headers: {
-    'Content-Type': 'application/json',
+    Accept: 'application/json',
   },
 })
 
